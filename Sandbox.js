@@ -13,8 +13,8 @@ async function startProgram() {
 }
 */
 
-// Square w/ different colors for each line & commit
-//Date: 1.19.2024
+// Square w/ different colors for each line
+//Date:1.18.2024
 async function startProgram() {
 	for (var _i1 = 0; _i1 < 8; _i1++) {
 		setMainLed(209,19,19)
@@ -31,27 +31,20 @@ async function startProgram() {
 	}
 }
 
-// Square w/ different colors and sounds for each line & commit
+// Square w/ different colors & Sound for each line
 /*
 
 
 
 
-//Figure 8
-//1.19.2024
+
+// Figure 8
+//Date:1.18.2024
 async function startProgram() {
 	for (var _i1 = 0; _i1 < 8; _i1++) {
-		setMainLed(209,19,19)
-		await roll(90, 50, 2)
-		setMainLed(255,205,3)
-		await roll(180, 50, 2)	
-		setMainLed(78,255,3)
-		await roll(270, 50, 2)	
-		setMainLed(54,190,227)
-		await roll(360, 50, 2)	
-		
-	
-
+		setSpeed(50)
+		await spin(360,5)
+		await spin(-360,5)
 	}
 }
 */
