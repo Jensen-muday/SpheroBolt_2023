@@ -1,4 +1,4 @@
-// Team members: Jensen Muday, Brian Kuhn
+ // Team members: Jensen Muday, Brian Kuhn
 // Name Jensen Muday
 // Date: 1.22.2024
 // Program: Maze
@@ -12,6 +12,10 @@ async function startProgram() {
 */
 //Roll to Blue then Blue LED
 async function startProgram() {
-	await roll(0, 105, 1.5)
+	await roll(0, 52.5, 3)
 	setMainLed({r:1, g:1, b:253})
+	await scrollMatrixText('blue', {r:2, g:2, b:123}, 25, true)
+	await speak('blue')
+	await roll(90, 52.5, 2)
+	await Sound.play(true)
 }
